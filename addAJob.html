@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Touch Screen Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        .container {
+            max-width: 807px;
+            height: 446px;
+        }
+
+        .numberBtn {
+            min-width: 75px;
+        }
+
+        .btn-outline-blue {
+            --bs-btn-color: #87aec1;
+            --bs-btn-border-color: #87aec1;
+            --bs-btn-hover-color: #fff;
+            --bs-btn-hover-bg: #87aec1;
+            --bs-btn-hover-border-color: #87aec1;
+            --bs-btn-focus-shadow-rgb: 248, 249, 250;
+            --bs-btn-active-color: #fff;
+            --bs-btn-active-bg: #87aec1;
+            --bs-btn-active-border-color: #87aec1;
+            --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+            --bs-btn-disabled-color: #87aec1;
+            --bs-btn-disabled-bg: transparent;
+            --bs-btn-disabled-border-color: #87aec1;
+            --bs-gradient: none;
+
+        }
+
+        .btn-blue {
+            --bs-btn-color: #fff;
+            --bs-btn-bg: #87aec1;
+            --bs-btn-border-color: #87aec1;
+            --bs-btn-hover-color: #fff;
+            --bs-btn-hover-bg: #87aec1;
+            --bs-btn-hover-border-color: #87aec1;
+            --bs-btn-focus-shadow-rgb: 49, 132, 253;
+            --bs-btn-active-color: #fff;
+            --bs-btn-active-bg: #87aec1;
+            --bs-btn-active-border-color: #87aec1;
+            --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+            --bs-btn-disabled-color: #fff;
+            --bs-btn-disabled-bg: #87aec1;
+            --bs-btn-disabled-border-color: #87aec1;
+        }
+
+        .btn-green {
+            --bs-btn-color: #fff;
+            --bs-btn-bg: #00968f;
+            --bs-btn-border-color: #00968f;
+            --bs-btn-hover-color: #fff;
+            --bs-btn-hover-bg: #00968f;
+            --bs-btn-hover-border-color: #00968f;
+            --bs-btn-focus-shadow-rgb: 49, 132, 253;
+            --bs-btn-active-color: #fff;
+            --bs-btn-active-bg: #00968f;
+            --bs-btn-active-border-color: #00968f;
+            --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+            --bs-btn-disabled-color: #fff;
+            --bs-btn-disabled-bg: #00968f;
+            --bs-btn-disabled-border-color: #00968f;
+        }
+    </style>
+</head>
+
+<body>
+    <!--<div class="text-center mb-5">
+        <a href="https://jsfiddle.net/524pcqte/" target="_blank">JS Fiddle Link</a>
+    </div>-->
+
+    <div class="container" style="background: #152334">
+        <div class="row p-3 d-flex h-100">
+            <div class="col-12 col-md-4 px-0 rounded-1" style="background: #dedede">
+                <div class="card h-100" style="background: #dedede">
+                    <div class="card-header">
+                        <p class="fs-4 fw-bold text-center mb-0">JOBS</p>
+                    </div>
+                    <div class="card-body p-0">
+                        <ul class="list-group list-group-flush" style="background: #dedede">
+                            <li class="list-group-item" style="background: #dedede;">
+                                <p class="text-center mb-0 fw-bold">Add a job to begin</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="card-footer text-end mt-auto">
+                        <a href="/selectDestination.html" class="text-end mb-0 btn btn-outline-dark border-0"><span
+                                class="material-icons d-block" style="font-size: 36px;">add_circle_outline</span></a>
+                    </div>
+                </div>
+
+            </div><!--end col-md-4-->
+
+            <div class="col-12 col-md-8 pe-0 d-flex flex-column">
+                <h1 class="fs-3 text-white text-center pb-2">NO ACTIVE JOBS</h1>
+                <div class="row">
+                    <div class="mx-auto my-auto text-center">
+                        <img class="d-block mx-auto my-auto" src="assets/images/robot.svg">
+                    </div>
+                </div>
+
+                <div class="row d-flex mt-auto">
+                    <div class="d-flex justify-content-around">
+                        <a href="/enterPin.html" class="btn btn-outline-light btn-lg">
+                            <div class="row">
+                                <div class="col-auto float-start my-auto">
+                                    <span class="material-icons d-block my-auto"
+                                        style="font-size:24px">chevron_left</span>
+                                </div>
+                                <div class="col">GO BACK</div>
+                            </div>
+                        </a>
+                        <a href="selectDestination.html" class="btn btn-green btn-lg nextStepBtn fw-bold ">
+                            <div class="row">
+                                <div class="col">NEXT STEP</div>
+                                <div class="col-auto float-end my-auto">
+                                    <span class="material-icons d-block my-auto"
+                                        style="font-size:24px">chevron_right</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div><!--end oouter row-->
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+            integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+        <script>
+            $(document).ready(function () {
+
+                $('.pinInput').keyup(function () {
+                    if ($(this).val().length == parseInt($(this).attr("maxlength"))) {
+
+                        let pinInputNumber = $(this).attr('data-place');
+                        let nextFocus = parseInt(pinInputNumber) + 1;
+
+                        if (nextFocus <= 4) {
+                            $('#pin' + nextFocus).focus();
+                        }
+
+                        checkForFullPin();
+                    }
+                });
+
+            });
+
+            function checkForFullPin() {
+                var flag = 0;
+
+                $(".pinInput").each(function () {
+                    if ($(this).val() !== "") {
+                        flag++;
+                    }
+                });
+
+                if (flag == 4) {
+                    window.location.href="/selectDestination.html"
+                }
+                
+            }
+        </script>
+</body>
+
+</html>
